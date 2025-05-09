@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Adicionar tarefas</title>
+</head>
+<body>
+
+    <h1>Adicionar tarefas</h1>
+
+    <form method="post" id="form-add-tarefa">
+        <label for="titulo" class="label-add-tarefa">Título da tarefa:</label>
+        <input type="text" placeholder="Título..." class="input-add-tarefa">
+
+        <label for="descricao" class="label-add-tarefa">Descrição</label>
+        <input type="text" placeholder="Descricao..." class="input-add-tarefa">
+
+        <label for="prioridade" class="label-add-tarefa">Prioridade</label>
+        <select name="tarefa" required class="select-values">
+
+            <option value="Urgente" class="option-from-select">Urgente</option>
+            <option value="Alta" class="option-from-select">Alta</option>
+            <option value="Normal" class="option-from-select">Normal</option>
+            <option value="Baixa" class="option-from-select">Baixa</option>
+            <option value="Opcional" class="option-from-select">Opcional</option>
+
+        </select>
+
+        <br><br>
+
+        <button type="submit" class="confirmar">Criar tarefa</button>
+    </form>
+
+    <button class="voltar"><a href="">Ver Lista</a></button>
+</body>
+</html>
